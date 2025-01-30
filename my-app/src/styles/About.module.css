@@ -1,0 +1,88 @@
+/* src/styles/About.module.css */
+
+/* General container styling */
+.container {
+    margin-top: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hero section styling */
+  .hero {
+    background-color: #2e4053;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    min-height: 50vh; /* Ensure it takes at least half the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    opacity: 0.85;
+  }
+  
+  /* Section styling */
+  .section {
+    padding: 2rem 2rem;
+    margin-top: 3rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: #2e4053;
+    margin-bottom: 1rem;
+    border-left: 5px solid #ffa07a;
+    padding-left: 15px;
+  }
+  
+  .section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Team styling */
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .teamMember {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teamMember img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .teamMember h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .teamMember p {
+    color: #777;
+  }
+  

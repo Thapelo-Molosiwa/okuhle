@@ -15,10 +15,9 @@ const Navbar = () => {
     { name: 'Services', href: '/services' },
     { name: 'Industries', href: '/industries' },
     { name: 'About', href: '/about' },
-    { name: 'News', href: '/news' },
     { name: 'Contact', href: '/contact' },
   ];
-
+  
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContent}>

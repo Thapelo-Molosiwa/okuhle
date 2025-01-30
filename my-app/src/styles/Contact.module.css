@@ -1,0 +1,149 @@
+/* General Styling */
+.contactPage {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    background: #fff;
+    text-align: center;
+    margin-top: 60px; /* Adding space between navbar and content */
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px; /* Increased padding to give more space */
+    background: #2e4053; /* Matching the site color */
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ffa07a; /* Matching the accent color */
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Contact Info Section */
+.contactInfo {
+    flex: 1;
+    max-width: 400px;
+}
+
+.infoItem {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #ffa07a; /* Matching the icon color with brand */
+    margin-bottom: 10px;
+}
+
+.infoItem h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #2e4053; /* Title color matching the brand */
+}
+
+.infoItem p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Form Section */
+.contactForm {
+    flex: 1;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2e4053; /* Matching color for titles */
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formGroup label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2e4053; /* Label color matching the brand */
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2e4053; /* Text color matching the brand */
+}
+
+.submitBtn {
+    width: 100%;
+    background: #ffa07a; /* Matching button color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submitBtn:hover {
+    background: #e76c4e; /* Hover state for the button */
+}
+
+/* Status message */
+.status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #0073e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contactForm,
+    .contactInfo {
+        max-width: 100%;
+    }
+
+    .infoItem {
+        text-align: center;
+    }
+}
