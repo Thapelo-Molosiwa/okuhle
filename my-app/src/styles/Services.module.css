@@ -1,166 +1,219 @@
 /* Global Styling */
 .container {
-    margin-top: 0;
-  }
-  
-  /* Hero Section */
-  .hero {
-    position: relative;
-    height: 80vh;
-    background-image: ;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  .heroContent {
-    text-align: center;
-    z-index: 1;
-    padding: 0 1rem;
-  }
-  
-  .heroContent h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .heroContent p {
-    font-size: 1.25rem;
-    max-width: 40rem;
-    margin: 0 auto;
-  }
-  
-  /* Main Content */
-  .mainContent {
-    padding: 5rem 1rem;
-  }
-  
-  /* Services Grid */
+  margin-top: 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: ;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.heroContent {
+  text-align: center;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* cta section*/
+.ctaSection {
+  background-color: #2E4053;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.ctaContent h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.ctaContent p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  background-color: #FFA07A;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #FF8C61;
+}
+
+
+.heroContent p {
+  font-size: 1.25rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.mainContent {
+  padding: 4rem 1rem;
+}
+
+.serviceCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Space between cards */
+}
+
+.cardTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2E4053;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cardContent {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.cardContent p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #4A5568;
+  max-width: 90ch;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Services Grid */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
   .servicesGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (min-width: 768px) {
-    .servicesGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  @media (min-width: 1024px) {
-    .servicesGrid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  .serviceCard {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-  }
-  
-  
-  
-  .iconContainer {
-    margin-bottom: 1.5rem;
-  }
-  
-  .icon {
-    width: 3rem;
-    height: 3rem;
-    color: #FFA07A;
-  }
-  
-  .h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2E4053;
-    margin-bottom: 1rem;
-  }
-  
-  .p {
-    color: #4A5568;
-    margin-bottom: 1.5rem;
-  }
-  
-  .ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .feature {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.75rem;
-  }
-  
-  .featureDot {
-    width: 8px;
-    height: 8px;
-    background-color: #FFA07A;
-    border-radius: 50%;
-    margin-right: 0.75rem;
-  }
-  
-  /* Process Section */
-  .processSection {
-    margin-bottom: 5rem;
-  }
-  
-  .processSection h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
-    color: #2E4053;
-  }
-  
+}
+
+.serviceCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.iconContainer {
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  color: #FFA07A;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2E4053;
+  margin-bottom: 1rem;
+}
+
+.p {
+  color: #4A5568;
+  margin-bottom: 1.5rem;
+}
+
+.ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.featureDot {
+  width: 8px;
+  height: 8px;
+  background-color: #FFA07A;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+/* Process Section */
+.processSection {
+  margin-bottom: 5rem;
+}
+
+.processSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #2E4053;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
   .processGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (min-width: 768px) {
-    .processGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+
+@media (min-width: 1024px) {
+  .processGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  @media (min-width: 1024px) {
-    .processGrid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
-  .processStep {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .processStep:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .stepNumber {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #FFA07A;
-    margin-bottom: 1rem;
-  }
-  
-  
+}
+
+.processStep {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stepNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFA07A;
+  margin-bottom: 1rem;
+}

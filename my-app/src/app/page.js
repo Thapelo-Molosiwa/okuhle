@@ -37,9 +37,10 @@ const Home = () => {
       <section className={styles.featuresSection}>
         <div className={styles.featuresContent}>
           <div className={styles.featuresHeading}>
-            <h2>Why Choose SafetyFirst?</h2>
+            <h2>Why Choose Nhanha Engineering?</h2>
             <p>
-              We provide comprehensive safety solutions backed by technology and a commitment to excellence.
+            We provide cutting-edge safety solutions powered by advanced technology and a strong commitment to excellence in mining and construction.
+
             </p>
           </div>
           
@@ -53,6 +54,7 @@ const Home = () => {
               <div key={index} className={styles.featureCard}>
                 <div className={styles.featureIcon}>{feature.icon}</div>
                 <h3>{feature.title}</h3>
+                <br/>
                 <p>{feature.description}</p>
               </div>
             ))}

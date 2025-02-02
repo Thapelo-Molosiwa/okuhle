@@ -12,7 +12,6 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: #2e4053;
   text-align: center;
@@ -20,53 +19,95 @@
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.2rem; /* Adjusted for mobile */
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.25rem;
-  max-width: 40rem;
+  font-size: 1rem; /* Adjusted for mobile */
+  max-width: 90%; /* Make the text container more flexible on smaller screens */
   margin: 0 auto;
 }
 
 /* Main Content */
 .main {
-  padding: 5rem 1rem;
+  padding: 3rem 1rem; /* Slightly reduced padding for mobile */
+}
+
+/* Blog Section */
+.blogSection {
+  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.blogSection h2 {
+  font-size: 2.2rem; /* Adjusted for mobile */
+  color: #2e4053;
+  margin-bottom: 1.5rem;
+}
+
+.blogSection h3 {
+  font-size: 1.5rem; /* Adjusted for mobile */
+  color: #2e4053;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blogSection p {
+  font-size: 1.125rem;
+  color: #4a5568;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /* Section Styling */
 .section {
   margin-bottom: 4rem;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Adjusted for mobile */
   color: #2e4053;
   margin-bottom: 2rem;
-  text-align: center;
   border-left: 5px solid #ffa07a;
   padding-left: 15px;
 }
 
-/* Grid Layout for Cards */
+/* AI in Construction Safety Section */
+.section.aiConstruction .grid {
+  display: flex;
+  flex-direction: column; /* Stacked on smaller screens */
+  gap: 2rem;
+  justify-content: center; /* Center the grid */
+}
+
+.section.aiConstruction .card {
+  flex: 0 1 300px; /* Set a specific width for the cards */
+}
+
+/* Grid Layout */
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Single column by default */
   gap: 2rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
   }
 }
 
 @media (min-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
   }
 }
 
@@ -74,6 +115,7 @@
 .card {
   background-color: white;
   padding: 2rem;
+  justify-content: center;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -133,31 +175,51 @@
 
 /* 🎯 Mobile Responsive Adjustments */
 @media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* Adjust hero section height */
+  }
+
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem; /* Smaller title for mobile */
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjusted for mobile */
   }
 
   .main {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem; /* Slightly reduced padding for mobile */
   }
 
   .section h2 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Smaller section title */
   }
 
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stacked cards in mobile view */
   }
 
   .card {
-    padding: 1.5rem;
+    padding: 1.5rem; /* Less padding for cards on mobile */
   }
 
   .card h3 {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Smaller card title for mobile */
+  }
+
+  .blogSection h2 {
+    font-size: 2rem; /* Slightly smaller blog section title */
+  }
+
+  .blogSection p {
+    font-size: 1rem; /* Adjusted text size for mobile */
+  }
+
+  .list li {
+    font-size: 1rem; /* Smaller list items for mobile */
+  }
+
+  .section p {
+    font-size: 1.125rem; /* Smaller font size for paragraphs */
   }
 }

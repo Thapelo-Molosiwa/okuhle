@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         
         <div className={styles.footerBottom}>
-          <p>&copy; 2024 NhaNha Engineering. All rights reserved.</p>
+          <p>&copy; 2024 Nhanha Engineering. All rights reserved.</p>
         </div>
       </div>
     </footer>

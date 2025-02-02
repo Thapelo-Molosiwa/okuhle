@@ -1,88 +1,166 @@
-/* src/styles/About.module.css */
+/* Hero Section */
+.heroSection {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+}
 
-/* General container styling */
-.container {
-    margin-top: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.heroTextContainer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroTextContainer h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.heroTextContainer p {
+  font-size: 1.25rem;
+}
+
+/* Main Content */
+.mainContent {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 1rem;
+}
+
+/* Mission and Vision */
+.missionVisionContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.missionVisionContainer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2E4053;
+  margin-bottom: 1rem;
+}
+
+.missionVisionContainer p {
+  color: #4A5568;
+}
+
+/* Core Values */
+.coreValuesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.coreValuesHeading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Founder Section */
+.teamSection {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: #f7fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.teamSection h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2E4053;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.founderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.founderContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 5px solid #FFA07A;
+}
+
+.founderName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2E4053;
+  margin-bottom: 0.5rem;
+}
+
+.founderPosition {
+  font-size: 1.25rem;
+  color: #4A5568;
+  margin-bottom: 2rem;
+}
+
+.founderDescription {
+  font-size: 1rem;
+  color: #4A5568;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.founderDescription p {
+  margin-bottom: 1.5rem;
+}
+
+.founderDescription .highlight {
+  font-weight: bold;
+  color: #FFA07A;
+}
+
+/* History Timeline */
+.historyTimeline {
+  margin-bottom: 4rem;
+}
+
+.historyTimeline .milestone {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.historyTimeline .milestone .year {
+  font-size: 1.5rem;
+  color: #FFA07A;
+  margin-right: 1.5rem;
+}
+
+.historyTimeline .milestone .details {
+  border-left: 2px solid #FFA07A;
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .missionVisionContainer {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* Hero section styling */
-  .hero {
-    background-color: #2e4053;
-    color: white;
-    text-align: center;
-    padding: 5rem 2rem;
-    min-height: 50vh; /* Ensure it takes at least half the screen */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  .coreValuesGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .hero p {
-    font-size: 1.25rem;
-    max-width: 40rem;
-    margin: 0 auto;
-    opacity: 0.85;
-  }
-  
-  /* Section styling */
-  .section {
-    padding: 2rem 2rem;
-    margin-top: 3rem;
-  }
-  
-  .section h2 {
-    font-size: 2rem;
-    color: #2e4053;
-    margin-bottom: 1rem;
-    border-left: 5px solid #ffa07a;
-    padding-left: 15px;
-  }
-  
-  .section p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Team styling */
-  .team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .teamMember {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .teamMember img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  
-  .teamMember h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .teamMember p {
-    color: #777;
-  }
-  
+}

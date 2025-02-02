@@ -1,4 +1,4 @@
-/* General Styling */
+/* Contact.module.css */
 .contactPage {
     font-family: 'Poppins', sans-serif;
     color: #000;
@@ -8,25 +8,25 @@
 }
 
 /* Hero Section */
-.hero {
+.contactHero {
     padding: 60px 20px; /* Increased padding to give more space */
     background: #2e4053; /* Matching the site color */
     color: white;
 }
 
-.hero h1 {
+.contactHero h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.hero p {
+.contactHero p {
     font-size: 1.2rem;
     color: #ffa07a; /* Matching the accent color */
 }
 
 /* Container Layout */
-.container {
+.contactContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@
     max-width: 400px;
 }
 
-.infoItem {
+.contactInfoItem {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -52,19 +52,19 @@
     text-align: left;
 }
 
-.icon {
+.contactIcon {
     font-size: 2rem;
     color: #ffa07a; /* Matching the icon color with brand */
     margin-bottom: 10px;
 }
 
-.infoItem h3 {
+.contactInfoItem h3 {
     font-size: 1.4rem;
     margin-bottom: 8px;
     color: #2e4053; /* Title color matching the brand */
 }
 
-.infoItem p {
+.contactInfoItem p {
     font-size: 1rem;
     color: #666;
 }
@@ -85,20 +85,20 @@
     color: #2e4053; /* Matching color for titles */
 }
 
-.formGroup {
+.contactFormGroup {
     margin-bottom: 15px;
     text-align: left;
 }
 
-.formGroup label {
+.contactFormGroup label {
     display: block;
     font-weight: 600;
     margin-bottom: 5px;
     color: #2e4053; /* Label color matching the brand */
 }
 
-.formGroup input,
-.formGroup textarea {
+.contactFormGroup input,
+.contactFormGroup textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -107,7 +107,7 @@
     color: #2e4053; /* Text color matching the brand */
 }
 
-.submitBtn {
+.contactSubmitBtn {
     width: 100%;
     background: #ffa07a; /* Matching button color */
     color: white;
@@ -120,12 +120,12 @@
     transition: 0.3s;
 }
 
-.submitBtn:hover {
+.contactSubmitBtn:hover {
     background: #e76c4e; /* Hover state for the button */
 }
 
 /* Status message */
-.status {
+.contactStatus {
     margin-top: 20px;
     font-size: 1.2rem;
     color: #0073e6;
@@ -133,7 +133,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .contactContainer {
         flex-direction: column;
         text-align: center;
     }
@@ -143,7 +143,7 @@
         max-width: 100%;
     }
 
-    .infoItem {
+    .contactInfoItem {
         text-align: center;
     }
 }
